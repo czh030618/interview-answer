@@ -428,12 +428,12 @@
         // 简单的下载按钮交互（实际需要后端支持生成PDF）
         document.getElementById('downloadBtn').addEventListener('click', function(e) {
             e.preventDefault();
-            alert('在实际应用中，这里可以连接后端服务生成PDF。\n\n当前您可以：\n1. 使用浏览器打印功能（快捷键Ctrl+P）\n2. 选择"另存为PDF"\n3. 保存精美的PDF版本');
+            alert('在实际应用中，这里可以连接后端服务生成PDF。\\n\\n当前您可以：\\n1. 使用浏览器打印功能（快捷键Ctrl+P）\\n2. 选择\"另存为PDF\"\\n3. 保存精美的PDF版本');
             
             // 模拟PDF生成提示
             const btn = this;
             const originalHTML = btn.innerHTML;
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 准备PDF中...';
+            btn.innerHTML = '<i class=\"fas fa-spinner fa-spin\"></i> 准备PDF中...';
             btn.style.backgroundColor = 'var(--success)';
             btn.style.borderColor = 'var(--success)';
             
